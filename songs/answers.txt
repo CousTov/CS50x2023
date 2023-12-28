@@ -1,0 +1,9 @@
+AVERAGE TEMPO 119.90
+AVERAGE VALENCE 0.48
+AVERAGE SPECHNIESS 0.11
+AVERAGE LOUDNESS -5.6
+AVERAGE DANCEABILITY 0.71
+AVERAGE ENERGY 0.65
+
+From the calculated averages of song tempo, valence, speechiness, loudness, danceability, and energy of 119.90. 0.48. 0.11, -5.6, 0.71, and 0.65, respectively, I would characterize this person's audio aura as purple; the ones who like to move, get amped up, and entertained.
+Although this method of calculating music aura might seem to provide a representation of the listener's "music taste", it may not be entirely accurate. Music a person listens to is ditiated by his/her moood, life events, lifestyle, and many other things. These things are variable, making the aura itself variable. I believe that data collected from one year of spotify use cannot provide accurate music aura. If the time span is greatly increased, we can get a more accurate representation of the person's audio aura becasue of the larger data collection.

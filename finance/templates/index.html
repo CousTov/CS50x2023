@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dahsboard
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead class="thead-dark">
+      <tr>BUY DATA</tr>
+      <tr>
+        <th scope="col">Stock Symbol</th>
+        <th scope="col">Stock Price</th>
+        <th scope="col">Owned Stocks</th>
+        <th scope="col">Total Value</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- TODO -->
+        {% for purchase in purchases %}
+            <tr>
+                <td>{{ purchase["stock_symbol"] }}</td>
+                <td>{{ updated_price[purchase["stock_symbol"]] }}</td>
+                <td>{{ purchase["n"] }}</td>
+                <td>{{ total_val[purchase["stock_symbol"]] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Cash</td>
+        <td>{{ cash }}</td>
+      </tr>
+      <tr>
+        <td>Grand Total</td>
+        <td>{{ grand_total }}</td>
+      </tr>
+    </tfoot>
+  </table>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>SELL DATA</tr>
+      <tr>
+        <th scope="col">Stock Symbol</th>
+        <th scope="col">Stock Price</th>
+        <th scope="col">Sold Stocks</th>
+        <th scope="col">Total Sell Value</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- TODO -->
+        {% for sell in sells %}
+            <tr>
+                <td>{{ sell["stock_symbol"] }}</td>
+                <td>{{ soldPrices[sell["stock_symbol"]] }}</td>
+                <td>{{ sell["n"] }}</td>
+                <td>{{ total_sold_val[sell["stock_symbol"]] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

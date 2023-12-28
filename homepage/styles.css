@@ -1,0 +1,32 @@
+.centerTxt{
+    padding-top:45vh;
+    vertical-align: middle;
+}
+#default{
+    background: linear-gradient(to right, red 0%, green 50%, blue 100%);
+
+    /*W3 School*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#discord{
+    color:#4254f5;
+}
+
+#steam{
+    color:#3d4bcc;
+}
+
+#riot{
+    color:red;
+}
+
+footer{
+    font-size:15px;
+    padding:10px;
+}
+
+#footer-id{
+    color:gold;
+}

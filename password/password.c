@@ -1,0 +1,67 @@
+// Check that a password has at least one lowercase letter, uppercase letter, number and symbol
+// Practice iterating through a string
+// Practice using the ctype library
+
+#include <cs50.h>
+#include <stdio.h>
+#include <ctype.h>
+
+bool valid(string password);
+
+int main(void)
+{
+    string password = get_string("Enter your password: ");
+    if (valid(password))
+    {
+        printf("Your password is valid!\n");
+    }
+    else
+    {
+        printf("Your password needs at least one uppercase letter, lowercase letter, number and symbol\n");
+    }
+}
+
+// TODO: Complete the Boolean function below
+bool valid(string password)
+{
+    //keeping track of the required characters
+    bool up = false;
+    bool lo = false;
+    bool alnum = false;
+    bool sym = false;
+
+    //iterating and checking each character, and updating the tracking bools respectively
+    for (int i = 0; password[i] != '\0'; i++)
+    {
+        if (islower(password[i]))
+        {
+            lo = true;
+        }
+
+        else if (isupper(password[i]))
+        {
+            up = true;
+        }
+
+        else if (isdigit(password[i]))
+        {
+            alnum = true;
+        }
+
+        else if (isalnum(password[i]) != true)
+        {
+            sym = true;
+        }
+    }
+
+    //checking if all the required chars are there
+    if (up == true && alnum == true && sym == true && lo == true)
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
+}

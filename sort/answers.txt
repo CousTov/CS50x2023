@@ -1,0 +1,36 @@
+sort1 uses: bubble sort
+
+How do you know?: Comparing the real running times, including the jump in it when the size of the database that needs sorting is increased, this algorithm performed good only when the dataset is already sorted. Since bubble sort has best case senario of n and worst of n^2, it fits.
+
+sort2 uses: merge sort
+
+How do you know?: Comparing the real running times, including the jump in it when the size of the database that needs sorting is increased, this algorithm performed the best. Among the three given choices, the best performing algorithm is merge sort, thus, it fits.
+
+sort3 uses: selection sort
+
+How do you know?: Comparing the real running times, including the jump in it when the size of the database that needs sorting is increased, this algorithm was consistent, albeit being relatively slow. Since selection sort is slow and takes the same number of steps in both the best case and worst case senario, it fits.
+
+RT 50000 sorted case for sort1 = .633s
+RT 50000 reversed case for sort1 = 5.954s
+RT 50000 random case for sort1 = 7.735s
+
+RT 5000 sorted case for sort1 = .034s
+RT 5000 reversed case for sort1 = .055s
+RT 5000 random case for sort1 = .097s
+
+
+RT 50000 sorted case for sort2 = .590s
+RT 50000 reversed case for sort2 =.715s
+RT 50000 random case for sort2 = .557s
+
+RT 5000 sorted case for sort2 = .023s
+RT 5000 reversed case for sort2 = .024s
+RT 5000 random case for sort2 = .026s
+
+RT 50000 sorted case for sort3 = 3.370s
+RT 50000 reversed case for sort3 = 3.459s
+RT 50000 random case for sort3 = 3.364s
+
+RT 5000 sorted case for sort3 = .067s
+RT 5000 reversed case for sort3 = .124s
+RT 5000 random case for sort3 = .071s
